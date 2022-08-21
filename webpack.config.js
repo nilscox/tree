@@ -23,8 +23,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.[jt]?$/,
+        test: /\.ts$/,
         loader: 'esbuild-loader',
+        options: {
+          loader: 'ts',
+        },
       },
     ],
   },
