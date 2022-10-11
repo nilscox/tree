@@ -10,13 +10,14 @@
   "globals": {
     "process": "readonly"
   },
-  "plugins": ["simple-import-sort", "@typescript-eslint"],
+  "plugins": ["import", "@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "import/order": "warn"
   }
 }
