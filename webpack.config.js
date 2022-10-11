@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const { HOST = '0.0.0.0', PORT = '8000' } = process.env;
 
+/** @type {import('webpack').Configuration} */
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
