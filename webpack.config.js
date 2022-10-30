@@ -39,5 +39,6 @@ module.exports = {
     host: HOST,
     port: Number(PORT),
     hot: true,
+    static: './public',
   },
 };
