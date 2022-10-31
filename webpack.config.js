@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const { HOST = '0.0.0.0', PORT = '8000' } = process.env;
 
@@ -33,7 +34,12 @@ module.exports = {
     ],
   },
 
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [{ from: 'public', to: '.' }],
+    }),
+  ],
 
   devServer: {
     host: HOST,
