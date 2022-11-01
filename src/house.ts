@@ -60,6 +60,6 @@ export const house = (scene: Scene) => {
 
   scene.add(groundMesh);
   scene.add(wallMesh1);
-  // scene.add(wallMesh2);
+  scene.add(wallMesh2);
   scene.add(expedit);
 };
