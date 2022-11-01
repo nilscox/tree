@@ -16,7 +16,7 @@ export const setup = (): Context => {
   const { innerWidth: width, innerHeight: height } = window;
   const aspectRatio = width / height;
 
-  const renderer = new WebGLRenderer();
+  const renderer = new WebGLRenderer({ antialias: true });
 
   renderer.setSize(width, height);
 
